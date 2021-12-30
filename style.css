@@ -194,3 +194,98 @@ h1{
 .P3:hover p{
     transform: translate(0px);
 }
+
+/* PROJET 4 BEFORE ET AFTER */
+
+.bf{
+    margin : 0;
+    position: relative;
+    left: 50%;
+    display: inline-block;
+    transform: translate(-50%);
+    cursor: pointer;
+    border : 2px solid green;
+    border-radius: 5px;
+    overflow: hidden;
+    width: 500px;
+    height: 150px;
+}
+
+.bf h4{
+    margin:0;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    z-index: 1000;
+}
+
+.bf::before{
+    position: absolute;
+    content: '.';
+    width: 50%;
+    height: 100%;
+    background-color: rgb(153, 255, 0);
+    color: transparent;
+    display: inline-block;
+    transition-duration: 1s;
+    left: 0px;
+    transform-origin: right;
+    transform: translate(-50px);
+    transform: translate(0px);
+}
+
+.bf::after{
+    position: absolute;
+    right: 0px;
+    content: '.';
+    width: 50%;
+    height: 100%;
+    background-color: rgb(140, 255, 87);
+    color: transparent;
+    display: inline-block;
+    transition-duration: 1s;
+    transform: translate(0px);
+}
+
+.bf:hover::before{
+    transform: translate(-50px);
+}
+
+.bf:hover::after{
+    transform: translate(+50px);
+}
+
+/* PROJET 5 */
+
+.rideau{
+    background-color: rgb(24, 24, 24);
+    height: 500px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transform: translate(-95%);
+    transition-duration: 1.5s;
+}
+
+.rideau h4 {
+    font-size: 25px;
+    color: whitesmoke;
+    font-style: italic;
+}
+
+
+.rideau h4:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.btn {
+    color: red;
+}
+
+.rideau:hover{
+    transform: translate(0px);
+}
