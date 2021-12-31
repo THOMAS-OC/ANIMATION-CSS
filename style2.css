@@ -1,3 +1,6 @@
+body {
+    background-color: gray;
+}
 .circle{
     position: absolute;
     left: 50%;
@@ -51,4 +54,38 @@ h2:hover{
 
 .circle:hover h2{
     color: whitesmoke;
+}
+
+.circlemove{
+    position: absolute;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    top: 5%;
+    left: 5%;
+    transform: translate(-50%, -50%);
+    border: 5px dotted white;
+    animation-name: rotate_circle;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function:ease-in-out;
+    transform-origin: center;
+}
+
+@keyframes rotate_circle {
+    0%{
+        transform-origin: center;
+        transform: rotate(0deg);
+
+    }
+    
+    50%{
+        transform-origin: center;
+        transform: rotate(180deg);
+    }
+
+    100%{
+        transform-origin: center;
+        transform: rotate(0deg);
+    }
 }
