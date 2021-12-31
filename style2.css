@@ -23,6 +23,7 @@ body {
     transform: scale(0.2);
     /* transform: scale(10); */
     transition-duration: 2s;
+    transition-delay: 1s;
 }
 
 .circle:hover .menu_circle{
@@ -70,6 +71,7 @@ h2:hover{
     animation-iteration-count: infinite;
     animation-timing-function:ease-in-out;
     transform-origin: center;
+    transition-duration: 1s;
 }
 
 @keyframes rotate_circle {
@@ -88,4 +90,9 @@ h2:hover{
         transform-origin: center;
         transform: rotate(0deg);
     }
+}
+
+.circlemove:hover{
+    background-color: black;
+    border-color: black;
 }
