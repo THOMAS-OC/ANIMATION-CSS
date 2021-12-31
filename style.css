@@ -141,7 +141,7 @@ h1{
     transform: perspective(1000px) rotateY(180deg);
 }
 
- .card:hover .back{
+.card:hover .back{
     transform: perspective(1000px) rotateY(360deg);
 }  
 
