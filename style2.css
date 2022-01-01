@@ -46,11 +46,13 @@ body {
 
 h2{
     transition-duration: 2s;
+    text-decoration-thickness: 0.01px;
 }
 
 h2:hover{
     text-decoration: underline;
     cursor: pointer;
+    text-decoration-thickness: 0.001px;
 }
 
 .circle:hover h2{
@@ -95,4 +97,45 @@ h2:hover{
 .circlemove:hover{
     background-color: black;
     border-color: black;
+}
+
+/* PROJET 2 */
+
+.python{
+    margin-top: 15vh;
+    height: 200px;
+    background-color: rgb(255, 238, 0);
+    color: rgb(0, 81, 255);
+    display: flex;
+    position: relative;
+    clip-path: circle(5% at 50% 50%);
+    transform: translate(-15%);
+    animation-name: python007;
+    animation-duration: 7s;
+    animation-delay: 0.5s;
+    animation-iteration-count: infinite;
+
+}
+
+h1{
+    font-size: 6em;
+    letter-spacing: 20px;
+    position: absolute;
+    left: 50%;
+    top: 20%;
+    transform: translate(-50%, -50%);
+    color: gray;
+}
+
+@keyframes python007 {
+    0%{
+
+    }
+
+    50%{
+        transform: translate(15%);
+    }
+
+
+
 }
