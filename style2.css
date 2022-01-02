@@ -111,7 +111,7 @@ h2:hover{
     clip-path: circle(5% at 50% 50%);
     transform: translate(-15%);
     animation-name: python007;
-    animation-duration: 7s;
+    animation-duration: 8s;
     animation-delay: 0.5s;
     animation-iteration-count: infinite;
 
@@ -135,7 +135,4 @@ h1{
     50%{
         transform: translate(15%);
     }
-
-
-
 }
